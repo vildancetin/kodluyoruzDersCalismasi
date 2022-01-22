@@ -1,0 +1,153 @@
+<h1>Kodluyoruz-Front-End</h1>
+<!--aciklama -->
+<!-- ctrl ö  açıklama satırına alır -->
+<!-- ctrl k-ctrl c açıklama satırına alır ve aynı zamanda çıkarır.  -->
+<h2>HTML</h2>
+<h3>Açıklamalarla Çalışmak</h3>
+<p>fhsdjbfshfbscbksdbcsbcsjbcjks</p>
+<p>fbsdbfjsbcds</p>    
+<p>fkjdnkjdn</p>   
+<p>kjkwnjfnsjkncs</p>   
+<p>fnsdkjvnsdkjncs</p>   
+<h3>Başlıklar ve Paragraflarla Çalışmak</h3>
+<p>fbsdbsncmsncms</p>
+<p>dsbcjsbcsbc</p>
+<p>jfdsjcnsjbsdjcnsc</p>
+
+<h2>CSS</h2>
+<h2>Bootsrap</h2>
+
+<h1>Listeler</h1>
+<!-- sıralı liste ol
+sırasız liste ul
+list item li  -->
+<ol>
+    <li>liste ögesi 1</li>
+    <li>liste ögesi 2</li>
+    <li>liste ögesi 3</li>
+</ol>
+
+<ul>
+    <li>liste ögesi 1</li>
+    <li>liste ögesi 2</li>
+    <li>liste ögesi 3</li>
+</ul>
+<!-- liste içinde liste oldu -->
+<ol>
+    <li>
+        <ul>
+            <li>liste ögesi 1</li>
+            <li>liste ögesi 2</li>
+            <li>liste ögesi 3</li>
+        </ul>
+    </li>
+</ol>
+<!-- roma rakamı ile sıralamak -->
+<ol type="I">
+    <li>Javascript</li>
+    <li>C#</li>
+    <li>Php</li>
+</ol>
+<ol type="a">
+    <li>Javascript</li>
+    <li>c#</li>
+    <li>php</li>
+</ol>
+<!-- sırasız listede baştaki simgeyi değiştirip silebilriz -->
+<ul style="list-style-type:none" >
+    <li>çay</li>
+    <li>türk kahvesi</li>
+    <li>süt</li>
+</ul>
+<ul style="list-style-type:square">
+    <li>telefon</li>
+    <li>bilgisayar</li>
+    <li>yazıcı</li>
+</ul>
+
+
+<h2 id="footer">listelerin altı</h2>
+<p>Lorem ipsum dolor sit amet.</p>
+
+
+
+<h2>Emmet/Zen Coding</h2>
+<!-- 
+  etiket isimlerini direk verebiliyoruz
++ kardeş öge h1+p+p+h+p  böyle oluşturabiliriz
+> içinde öge    ul>li*5  ul içinde 5 li oluşur
+^ yukarı çık ve öge oluştur    ul>li*3^p^h3^p ul içinde 3 li oluştur yukarı çık ve p oluştur böyle devam et
+* çarp  h1+p*2+h+p
+lorem anlamsız yazı dizisi
+p>lorem 
+lorem4-> 4 kelimelik lorem
+. -> class h3.deneme>lorem1
+# -> id   h3#idolussun>lorem1
+ikisi birlikte   h3.deneme#idolussun>lorem1
+herhangi bir etiket yazmadan .name yaparsak .className div oluştururr-->
+
+ <!-- ul>li*3>lorem1^^p*2>lorem4^h3>lorem1 -->
+<ul>
+    <li>Lorem.</li>
+    <li>Iusto.</li>
+    <li>Sed?</li>
+</ul>
+<p>Lorem ipsum dolor sit.</p>
+<p>Odit iste sed reiciendis?</p>
+<h3>Lorem.</h3>
+
+<h2>Görsellerle Çalışmak</h2>
+<!-- src kaynak adresi, alt ise resim gözükmezse yazan yazı -->
+<!-- width ve height ayarı değiştirirlbeilir -->
+<!-- web sitesinden bir adres olabilir -->
+<img src="https://i.bigpara.com/resize/650x365/i/55big/ingiltere_6195_3891(1).jpg" alt="ingiltere">
+<!-- lorem picsumdan rastegele resimle  -->
+<img src="https://picsum.photos/600/300" alt="">
+<!-- klasörden kullanmak -->
+<!-- title, bilgi vermek için kullanılır -->
+<!-- border çerçeve özelliği verir -->
+<img src="images/köpek.jpg" alt="köpek resmi" title="yavru köpek">
+
+<h2>Linklerle Çalışmak</h2>
+<!-- 
+    aynı sayfa içinde bir yere gitme  ıd gibi
+    başka sayfaya git
+    mail at
+    telefon et
+    href-> link kısmı
+     -->
+     <!-- target _blank demek gideceği hedef sayfayı başka sekmede açmak -->
+
+<ul>
+    <li>
+        <a href="https://kodluyoruz.org" target="_blank">
+            kodluyoruz sayfasına git
+
+        </a>
+    </li>
+    <li>
+        <!-- aynı projede başka sayfaya gitmek -->
+        <a href="iletisim.html">
+            iletişim sayfasına git
+        </a>
+    </li>
+    <li>
+        <!-- aynı sayfa içinde belli bir yere git id gibi-->
+        <a href="#footer">
+            En alt kısma git
+        </a>
+    </li>
+    <li>
+        <!-- mail atma kısmı mailto: ile başlar mail atılacak yer yazılır -->
+        <a href="mailto:info@kolduyoruz.org">
+            kodluyoruza mail at
+        </a>
+    </li>
+    <li>
+        <!-- telefon araması yapma -->
+        <a href="tel:05551116677">
+            telefon ac
+        </a>
+    </li>
+</ul>
+

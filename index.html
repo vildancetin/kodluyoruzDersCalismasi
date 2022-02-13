@@ -106,8 +106,19 @@ herhangi bir etiket yazmadan .name yaparsak .className div oluştururr-->
 <!-- klasörden kullanmak -->
 <!-- title, bilgi vermek için kullanılır -->
 <!-- border çerçeve özelliği verir -->
-<img src="images/köpek.jpg" alt="köpek resmi" title="yavru köpek">
+<img src="images/köpek.jpg" alt="köpek resmi" title="yavru köpek" style="float: right;">
 
+<!-- img map kullanımı, resmin farklı alanlarına tıklamak -->
+<img src="images/köpek.jpg" alt="köpek" usemap="#dog">
+<map name="dog" >
+    <area shape="rect" coords="130,100,170,350" href="dog.html" alt="dog">
+</map>
+<!-- 
+  background-image: url('img_girl.jpg');   arka plan resmi
+  background-repeat: no-repeat;   resmin tekrar etmemesi
+  background-attachment: fixed;   her yere resmi geldiğinden emin omak
+  background-size: 100% 100%;    tüm ekrana resmin yayılması 
+ -->
 <h2>Linklerle Çalışmak</h2>
 <!-- 
     aynı sayfa içinde bir yere gitme  ıd gibi
@@ -150,4 +161,47 @@ herhangi bir etiket yazmadan .name yaparsak .className div oluştururr-->
         </a>
     </li>
 </ul>
+<!-- Tablolar  -->
+<!-- 
+    tr-> sütun
+    td-> satır
+    th-> sütun başlığı
 
+ -->
+<h2>Tablolarla Çalışmak</h2>
+<style>
+    table,th,td{
+        /* border-radius kenarları kavisli yapar */
+        border: 1px solid white;
+        border-radius: 10px;
+        border-style: dotted; /* noktalı*/
+        /* collapse borderları teke indirdi çift pencere olmadı */
+        border-collapse: collapse;
+    }
+    th,td{
+        /* satırlara arka plan rengi verdik */
+        background-color: #96D4D4;
+    }
+</style>
+<table style="width:100%">
+    <tr>
+      <th style="width:30%">Firstname</th>
+      <th>Lastname</th> 
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </table>
